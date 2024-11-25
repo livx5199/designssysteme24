@@ -105,10 +105,18 @@ export default {
         },
 
         /* Tilføj dit typografiske hierarki herunder */
-        // fontSize: {
-        //     base: ['1rem', { lineHeight: '1.5rem' }],
-        //     large: ['2.5rem', { lineHeight: '3.75rem' }],
-        //   },
+        fontSize: {
+            medium: ['1rem', { lineHeight: '1rem' }],
+            'medium-mobile': ['0.8rem', { lineHeight: '0.5rem' }],
+            large: ['1.3rem', { lineHeight: '1.3rem' }],
+            'large-mobile': ['1rem', { lineHeight: '1rem' }],
+            xlarge: ['1.8rem', { lineHeight: '1.8rem' }],
+            'xlarge-mobile': ['1.3rem', { lineHeight: '1.3rem' }],
+            xxlarge: ['2.3rem', { lineHeight: '2.3rem' }],
+            'xxlarge-mobile': ['1.8rem', { lineHeight: '1.8rem' }],
+            xxxlarge: ['3rem', { lineHeight: '3rem' }],
+            'xxxlarge-mobile': ['2.3rem', { lineHeight: '2.3rem' }],
+          },
 
         /* Tilføj dit fontvægt-hierarki nedenfor */
         //   fontWeight: {
