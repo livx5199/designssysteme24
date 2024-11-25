@@ -119,22 +119,22 @@ export default {
         },
 
         /* Borders - borderstørrelser herunder */
-        // borderWidth: {
-        //     DEFAULT: '1px',
-        //     0: '0px',
-        //     2: '2px',
-        // },
+        borderWidth: {
+            default: '0px',
+            border: '15px',
+        },
 
         /* Border radius størrelser herunder */
-        // borderRadius: {
-        //     DEFAULT: '1.25rem',
-        //     none: '0px',
-        // },
+        borderRadius: {
+            default: '35px',
+            medium: '50px',
+            wide: '75px',
+        },
 
         /* Box shadows herunder */
-        // boxShadow: {
-        //     drop25: '4px 4px 4px 0 rgb(0 0 0 / 0.25)', /* x y blur spread farve / opacity */  
-        // },
+        boxShadow: {
+            drop25: '4px 4px 4px 0 rgb(0 0 0 / 0.25)', /* x y blur spread farve / opacity */  
+        },
 
         extend: {
         /* Tilføj din egen spacing nedenfor */
