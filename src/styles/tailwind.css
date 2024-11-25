@@ -2,8 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    /* p{
-        @apply text-body;
-    } */
+@layer base {
+  /* Desktop Fonts */
+  .h1-desktop {
+    @apply text-xxxlarge font-display;
+  }
+  .h2-desktop {
+    @apply text-xxlarge font-display;
+  }
+  .h3-desktop {
+    @apply text-xlarge font-sans font-semibold;
+  }
+  .h4-desktop {
+    @apply text-large font-sans font-semibold;
+  }
+  .p-desktop {
+    @apply text-medium font-sans text-vulcan-950*;
+  }
+
+  /* Mobile Fonts */
+  .h1-mobile {
+    @apply text-xxxlarge-mobile font-display;
+  }
+  .h2-mobile {
+    @apply text-xxlarge-mobile font-display;
+  }
+  .h3-mobile {
+    @apply text-xlarge-mobile font-sans font-semibold;
+  }
+  .h4-mobile {
+    @apply text-large-mobile font-sans font-semibold;
+  }
+  .p-mobile {
+    @apply text-medium-mobile font-sans text-vulcan-950*;
+  }
 }

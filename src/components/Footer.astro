@@ -1,11 +1,65 @@
 ---
-
+import { Image } from "astro:assets";
+import goudalogo from "../assets/images/gouda-logo.svg";
+import co2neutraltlogo from "../assets/images/co2-neutralt-website-logo.svg";
+import rejsegarantifondenlogo from "../assets/images/rejsegarantifonden-logo.png";
+import jyskrejsebureaulogo from "../assets/images/jysk-rejsebureau-logo.svg";
 ---
 
-<div class="bg-golden-tainoi-600">
-  <p
-    class="max-w-screen-xl mx-auto text-xxxlarge font-regular shadow-drop25 font-display"
-  >
-    Footer - tilføj footerindhold
-  </p>
+<div class="bg-blaze-orange-100 p-10">
+  <div class="flex flex-col lg:flex-row justify-around items-center gap-2">
+    <div>
+      <h4 class="text-center lg:text-left h4-desktop text-blaze-orange-800 m-2">
+        HÖJSKOLENDK
+      </h4>
+      <p class="text-center lg:text-left m-2">
+        Rosenørns Allé 29 <br />
+        1970 Frederiksberg <br />
+        Danmark
+      </p>
+    </div>
+    <div>
+      <h4 class="h4-desktop text-blaze-orange-800 text-center lg:text-left m-2">
+        KONTAKT
+      </h4>
+      <p class="text-center lg:text-left m-2">
+        Telefon: 70 27 90 07 <br />
+        Mandag til fredag kl. 10-16 <br />
+        Mail: info@hojskolendk.dk
+      </p>
+    </div>
+    <div>
+      <h4 class="text-center lg:text-left h4-desktop text-blaze-orange-800 m-2">
+        SAMARBEJDSPARTNERE
+      </h4>
+      <div class="flex flex-col lg:flex-row items-center">
+        <Image
+          alt="rejsegarantifonden logo"
+          src={rejsegarantifondenlogo}
+          class="w-28 m-2"
+        />
+        <Image
+          alt="rejsegarantifonden logo"
+          src={jyskrejsebureaulogo}
+          class="w-28 m-2"
+        />
+        <Image alt="rejsegarantifonden logo" src={goudalogo} class="w-28 m-2" />
+        <Image
+          alt="rejsegarantifonden logo"
+          src={co2neutraltlogo}
+          class="w-28 m-2"
+        />
+      </div>
+    </div>
+  </div>
+  <div></div>
+  <div class="flex flex-col lg:flex-row justify-between">
+    <p class="text-center lg:text-left">
+      HöjskolenDK er medlem af Rejsegarantifonden.
+    </p>
+    <p class="text-center lg:text-left">
+      Handelbestingelser / Cookiepolitik / Data- & Privatlivspolitik
+    </p>
+    <p class="text-center lg:text-left">Copyright © HÖJSKOLENDK 2022</p>
+  </div>
 </div>
