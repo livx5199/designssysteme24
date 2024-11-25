@@ -119,9 +119,12 @@ export default {
           },
 
         /* Tilføj dit fontvægt-hierarki nedenfor */
-        //   fontWeight: {
-        //     regular: '400',
-        //   },
+          fontWeight: {
+            regular: '100',
+        },
+        fontWeight: {
+            semibold: '600',
+        },
 
         /* Borders - borderstørrelser herunder */
         // borderWidth: {
