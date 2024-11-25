@@ -89,16 +89,8 @@ export default {
                 "950": "rgba(63, 20, 11, 1)",
             }
       },
-         /* Tilføj din egen spacing nedenfor */
-        // spacing: {
-        //     'm': '40px',
-        // },
 
         /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */
-        // fontFamily: {
-        //     sans: ['Prompt', 'sans-serif'],
-        //     'display': ['Courier', 'monospace'], /* eksempel på ekstra font */
-        // },
         fontFamily: {
             sans: ['Poppins', 'sans-serif'],
             'display': ['Orelega One', 'serif'], /* eksempel på ekstra font */
@@ -144,9 +136,29 @@ export default {
         //     drop25: '4px 4px 4px 0 rgb(0 0 0 / 0.25)', /* x y blur spread farve / opacity */  
         // },
 
-		extend: {
+        extend: {
+        /* Tilføj din egen spacing nedenfor */
+        spacing: {
+            'xxs': '8px',
+            'xs': '16px',
+            's': '24px',
+            'sm': '32px',
+            'm': '40px',
+            'ml': '48px',
+            'lg': '64px',
+            'xl': '80px',
+            '2xl': '96px',
+            '3xl': '112px',
+            '4xl': '128px',
+            '5xl': '160px',
+            '6xl': '208px',
+            '7xl': '320px',
+            '8xl': '360px',
+            '9xl': '424px'
+ },
+    },
+
         },
-	},
 	plugins: [
         require('@tailwindcss/typography'),
         require('@tailwindcss/forms'),
