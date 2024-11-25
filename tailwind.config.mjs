@@ -99,6 +99,10 @@ export default {
         //     sans: ['Prompt', 'sans-serif'],
         //     'display': ['Courier', 'monospace'], /* eksempel på ekstra font */
         // },
+        fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+            'display': ['Orelega One', 'serif'], /* eksempel på ekstra font */
+        },
 
         /* Tilføj dit typografiske hierarki herunder */
         // fontSize: {
