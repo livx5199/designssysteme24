@@ -98,6 +98,7 @@ export default {
 
         /* Tilføj dit typografiske hierarki herunder */
         fontSize: {
+            small: ['0.5rem', { lineHeight: '0.5rem' }],
             medium: ['1rem', { lineHeight: '1rem' }],
             'medium-mobile': ['0.8rem', { lineHeight: '0.5rem' }],
             large: ['1.3rem', { lineHeight: '1.3rem' }],
