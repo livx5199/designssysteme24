@@ -9,43 +9,67 @@
         med et stærkt sammenhold og fede rejseoplevelser. Glæd dig også til inspirerende undervisning,
         der levende og aktivt forener det lærende med det legende. Se vores eventyrlige højskoleophold i udlandet</p>
 
-    <div class="relative drop-shadow-lg pt-6">
-        <div class="carousel-inner">
-            <input type="radio" id="carousel-1" name="carousel" class="hidden carousel-open" checked>
-            <input type="radio" id="carousel-2" name="carousel" class="hidden carousel-open">
-            <input type="radio" id="carousel-3" name="carousel" class="hidden carousel-open">
-
-            <div class="relative w-full overflow-hidden carousel-inner grid grid-cols-3">
-                <div>
-                    <div class="absolute opacity-0 transition-opacity duration-600 ease-out carousel-item">
-                        <img src="image1.jpg" alt="Image 1" class="block w-full h-auto max-w-full">
-                        <video src=""></video>
-                    </div>
-                    <div class="absolute opacity-0 transition-opacity duration-600 ease-out carousel-item">
-                        <img src="image2.jpg" alt="Image 2" class="block w-full h-auto max-w-full">
-                    </div>
-                    <div class="absolute opacity-0 transition-opacity duration-600 ease-out carousel-item">
-                        <img src="image3.jpg" alt="Image 3" class="block w-full h-auto max-w-full">
-                    </div>
-                </div>
+    <div class="carousel-container w-[80%] m-auto relative flex flex-col gap-[1px]">
+        <div class="carousel aspect-[9/16] w-[100%] relative overflow-hidden">
+            <div class="item active opacity-1 block w-[100%] h-[100%] transition-opacity duration-[0.5s] ease-in-out">
+                <img src="https://bit.ly/34xczKy" alt="Image 1" class="w-[100%] h-[100%] object-cover object-center"/>
+                <p class="caption w-[100%] px-lg absolute bottom-0 uppercase text-center bg-black bg-opacity-50">Caption for Image 1</p>
             </div>
-
-            <!-- Controls -->
-            <label for="carousel-1" class="absolute top-1/2 left-2 w-10 h-10 bg-black bg-opacity-30 rounded-full text-white text-center text-4xl cursor-pointer transform -translate-y-1/2 control prev hidden hover:bg-opacity-80 hover:text-gray-400">‹</label>
-            <label for="carousel-2" class="absolute top-1/2 right-2 w-10 h-10 bg-black bg-opacity-30 rounded-full text-white text-center text-4xl cursor-pointer transform -translate-y-1/2 control next hidden hover:bg-opacity-80 hover:text-gray-400">›</label>
-
-            <!-- Indicators -->
-            <ul class="absolute bottom-2 left-0 right-0 m-0 p-0 text-center z-10 carousel-indicators">
-                <li class="inline-block mx-1">
-                    <label for="carousel-1" class="text-white text-3xl cursor-pointer carousel-bullet hover:text-gray-400">•</label>
-                </li>
-                <li class="inline-block mx-1">
-                    <label for="carousel-2" class="text-white text-3xl cursor-pointer carousel-bullet hover:text-gray-400">•</label>
-                </li>
-                <li class="inline-block mx-1">
-                    <label for="carousel-3" class="text-white text-3xl cursor-pointer carousel-bullet hover:text-gray-400">•</label>
-                </li>
-            </ul>
+                <div class="item hidden w-[100%] h-[100%] transition-opacity duration-[0.5s] ease-in-out">
+                <img src="https://bit.ly/3lkp5DW" alt="Image 2" class="w-[100%] h-[100%] object-cover object-center"/>
+                <p class="caption w-[100%] px-lg absolute bottom-0 uppercase text-center bg-black bg-opacity-50">Caption for Image 2</p>
+            </div>
+            <div class="item hidden w-[100%] h-[100%] transition-opacity duration-[0.5s] ease-in-out">
+                <img src="https://bit.ly/3iMHuI1" alt="Image 3" class="w-[100%] h-[100%] object-cover object-center"/>
+                <p class="caption w-[100%] px-lg absolute bottom-0 uppercase text-center bg-black bg-opacity-50">Caption for Image 3</p>
+            </div>
+        </div>
+        <button class="btn prev px-[1em] py-[2em] absolute translate-y-[17rem] top-[50%] outline-none border-none cursor-pointer uppercase
+        font-[900] text-[#10100e] bg-vulcan-50 transition-transform duration-[0.2s] ease-in-out left-[-5%] active:translate-y-[-50%] active:scale-[0.9] focus:translate-y-[-50%] focus:scale-[0.9] hover:translate-y-[-50%] hover:scale-[0.96]">Prev</button>
+        <button class="btn next px-[1em] py-[2em] absolute translate-y-[17rem] top-[50%] outline-none border-none cursor-pointer uppercase
+        font-[900] text-[#10100e] bg-vulcan-50 transition-transform duration-[0.2s] ease-in-out right-[-5%] active:translate-y-[-50%] active:scale-[0.9] focus:translate-y-[-50%] focus:scale-[0.9] hover:translate-y-[-50%] hover:scale-[0.96]">Next</button>
+        <div class="dots flex items-center justify-center gap-[10px]">
         </div>
     </div>
 </section>
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll(".item");
+  const dotsContainer = document.querySelector(".dots");
+
+  // Insert dots into the DOM
+  items.forEach((_, index) => {
+    const dot = document.createElement("span");
+    dot.classList.add("dot", "cursor-pointer", "h-[10px]", "w-[10px]", "bg-[#242421]", "transition", "duration-[0.2s]", "ease-linear", "hover:bg-[#ffffe6]");
+    if (index === 0) dot.classList.add("active", "bg-[#ffffe6]");
+    dot.dataset.index = index.toString();
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = document.querySelectorAll(".dot");
+
+  // Function to show a specific item
+  function showItem(index) {
+    items.forEach((item, idx) => {
+      item.classList.toggle("hidden", idx !== index);
+      dots[idx].classList.toggle("active", idx === index);
+      dots[idx].classList.toggle("bg-[#ffffe6]", idx === index);
+    });
+  }
+
+  // Event listeners for buttons
+  document.querySelector(".prev").addEventListener("click", () => {
+    const index = [...items].findIndex(item => !item.classList.contains("hidden"));
+    showItem((index - 1 + items.length) % items.length);
+  });
+
+  document.querySelector(".next").addEventListener("click", () => {
+    const index = [...items].findIndex(item => !item.classList.contains("hidden"));
+    showItem((index + 1) % items.length);
+  });
+
+ // Event listeners for dots
+  dots.forEach(dot => dot.addEventListener("click", () => showItem(parseInt((dot as HTMLElement).dataset.index!))));
+}); 
+</script>
