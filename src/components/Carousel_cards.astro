@@ -1,0 +1,11 @@
+---
+const { video="", caption="" } = Astro.props;
+---
+
+<div class="item w-full h-full transition-opacity duration-[0.5s] ease-in-out">
+    <video class="w-full h-full object-cover object-center" autoplay loop muted>
+        <source src={video} type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p class="caption w-[100%] px-lg absolute bottom-0 uppercase text-center bg-black bg-opacity-50">{caption}</p>
+</div>

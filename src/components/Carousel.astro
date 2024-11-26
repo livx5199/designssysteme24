@@ -1,5 +1,5 @@
 ---
-
+import Carousel_cards from "../components/Carousel_cards.astro"
 ---
 <section class="mx-3xl py-xl">
     <h1 class="text-xxxlarge font-display text-center pb-xs">HØJSKOLE OPHOLD</h1>
@@ -11,18 +11,13 @@
 
     <div class="carousel-container w-[80%] m-auto relative flex flex-col gap-[1px]">
         <div class="carousel aspect-[9/16] w-[100%] relative overflow-hidden">
-            <div class="item active opacity-1 block w-[100%] h-[100%] transition-opacity duration-[0.5s] ease-in-out">
-                <img src="https://bit.ly/34xczKy" alt="Image 1" class="w-[100%] h-[100%] object-cover object-center"/>
-                <p class="caption w-[100%] px-lg absolute bottom-0 uppercase text-center bg-black bg-opacity-50">Caption for Image 1</p>
-            </div>
-                <div class="item hidden w-[100%] h-[100%] transition-opacity duration-[0.5s] ease-in-out">
-                <img src="https://bit.ly/3lkp5DW" alt="Image 2" class="w-[100%] h-[100%] object-cover object-center"/>
-                <p class="caption w-[100%] px-lg absolute bottom-0 uppercase text-center bg-black bg-opacity-50">Caption for Image 2</p>
-            </div>
-            <div class="item hidden w-[100%] h-[100%] transition-opacity duration-[0.5s] ease-in-out">
-                <img src="https://bit.ly/3iMHuI1" alt="Image 3" class="w-[100%] h-[100%] object-cover object-center"/>
-                <p class="caption w-[100%] px-lg absolute bottom-0 uppercase text-center bg-black bg-opacity-50">Caption for Image 3</p>
-            </div>
+          <Carousel_cards class="active opacity-1 block"
+          video="src/assets/videos/australien.mp4"
+          caption="hej "
+          >
+          </Carousel_cards>
+          <Carousel_cards class="hidden"></Carousel_cards>
+          <Carousel_cards class="hidden"></Carousel_cards>
         </div>
         <button class="btn prev px-[1em] py-[2em] absolute translate-y-[17rem] top-[50%] outline-none border-none cursor-pointer uppercase
         font-[900] text-[#10100e] bg-vulcan-50 transition-transform duration-[0.2s] ease-in-out left-[-5%] active:translate-y-[-50%] active:scale-[0.9] focus:translate-y-[-50%] focus:scale-[0.9] hover:translate-y-[-50%] hover:scale-[0.96]">Prev</button>
