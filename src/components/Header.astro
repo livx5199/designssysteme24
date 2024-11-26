@@ -8,7 +8,7 @@ import pilned from "../assets/images/pilned.svg";
 ---
 
 <div
-  class="bg-blaze-orange-100 p-10 flex flex-row justify-between items-center"
+  class="bg-blaze-orange-100 p-10 flex flex-row justify-between items-center desktop-menu"
 >
   <div>
     <a href="https://www.hojskolendk.dk"
@@ -52,217 +52,163 @@ import pilned from "../assets/images/pilned.svg";
   </div>
 </div>
 
-<div class="max-w-screen-xl mx-auto text-white">
-  <div class="a-header">
-    <input type="checkbox" name="main-nav" id="main-nav" class="burger-check" />
-    <label for="main-nav" class="burger menu"><span></span></label>
-    <ul>
-      <li><a href="#">Lorem</a></li>
-      <li><a href="#" class="active">Aliquam</a></li>
-      <li><a href="#">Vestibulum</a></li>
+<!-- BURGER MENU -->
+
+<section class="top-nav bg-blaze-orange-100 p-2">
+  <div>
+    <a href="https://www.hojskolendk.dk"
+      ><Image alt="Facebook logo" src={logo} class="w-24 m-5" /></a
+    >
+  </div>
+  <div class="m-5">
+    <input id="menu-toggle" type="checkbox" />
+    <label class="menu-button-container" for="menu-toggle">
+      <div class="menu-button"></div>
+    </label>
+    <ul class="menu">
+      <li class="list-none">HØJSKOLEOPHOLD</li>
+      <li class="list-none">SOMMERHØJSKOLE</li>
+      <li class="list-none">OM OS</li>
+      <li class="list-none">TILMELD</li>
+      <li class="list-none">INFOMØDER</li>
     </ul>
   </div>
-</div>
+</section>
 
 <style>
-  *==============================================================================
-    General
-    Styles
-    ==============================================================================*/
-    h1,
-  div,
-  .boo {
-    position: relative;
-    float: left;
-    width: calc(100% - 20px);
+  h2 {
+    vertical-align: center;
     text-align: center;
-    margin: 20px 0 0 0;
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    color: #333;
   }
 
   html,
   body {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  /*--------------------------------------
- Animation Magic, animations won't occur
- on IE9 and before and Opera Mini
---------------------------------------*/
-  *,
-  *:before,
-  *:after {
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    box-sizing: border-box;
-  }
-
-  /*==============================================================================
- The burger icon with it's animation. Uses the checked property of a checkbox
- in order to make the animation happen as well as control the next elements
- I've used classes because of the + css selector, which will only ever animate
- the next label element. Does not work on IE8 or below and opera mini since
- they don't support the :checked selector.
-==============================================================================*/
-  .burger-check {
-    display: none;
-  }
-
-  /*--------------------------------------
- Sets the actionable area for the burger
- including a label for usability
---------------------------------------*/
-  .burger {
-    position: relative;
-    float: left;
-    margin-left: 10px;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-  }
-
-  .burger:after {
-    position: absolute;
-    bottom: 7px;
-    left: 0px;
-    width: 100%;
-    text-align: center;
-    font-size: 13px;
-  }
-
-  /*--------------------------------------
- Creates the look of the burger icon
- using the inner span and pseudo-elements
---------------------------------------*/
-  .burger span,
-  .burger span:before,
-  .burger span:after {
-    position: absolute;
-    left: 10px;
-    top: 22px;
-    width: 40px;
-    height: 4px;
-    background: #333;
-    border-radius: 0.2em;
-  }
-
-  /* Reset the left and create the pseudo-element */
-  .burger span:before,
-  .burger span:after {
-    content: "";
-    left: 0;
-  }
-
-  /* Top bar position */
-  .burger span:before {
-    top: -8px;
-  }
-
-  /* Bottom bar position */
-  .burger span:after {
-    top: 8px;
-  }
-
-  /* Get rid of more on action (IE9 or higher) */
-  .burger-check:checked + .burger:after {
-    content: "";
-  }
-  /* Get rid of the middle bar on action (IE9 or higher) */
-
-  .burger-check:checked + .burger span {
-    height: 0;
-    width: 0;
-  }
-
-  /* Moves the top and bottom bars to the middle on action (IE9 or higher) */
-  .burger-check:checked + .burger span:before,
-  .burger-check:checked + .burger span:after {
-    top: 6px;
-  }
-
-  /* Rotates the top bar on action with full browser support (IE9 or higher) */
-  .burger-check:checked + .burger span:before {
-    -webkit-transform: rotate(225deg);
-    -ms-transform: rotate(225deg);
-    transform: rotate(225deg);
-  }
-
-  /* Rotates the bottom bar on action with full browser support (IE9 or higher) */
-  .burger-check:checked + .burger span:after {
-    -webkit-transform: rotate(-225deg);
-    -ms-transform: rotate(225deg);
-    transform: rotate(-225deg);
-  }
-
-  /*==============================================================================
- Simple reveal (IE9 or higher)
-==============================================================================*/
-  span.boo {
-    width: auto;
-    margin-top: 0;
-    line-height: 60px;
-    height: 0;
-    overflow: hidden;
-  }
-
-  /* Reveals Boo! (IE9 or higher) */
-  #main-nav-test:checked ~ .boo {
-    height: 50px;
-  }
-
-  /*==============================================================================
- Simple mobile menu opening and closing (IE9 or higher)
-==============================================================================*/
-  .a-header {
-    display: none;
-    position: relative;
-    float: left;
-    width: calc(100% - 20px);
     margin: 0;
-    min-height: 50px;
-    background: #eee;
-    overflow: hidden;
+    height: 100%;
   }
 
-  .a-header ul {
-    position: relative;
-    float: left;
-    width: 100%;
-    list-style: none;
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
     margin: 0;
     padding: 0;
   }
 
-  .a-header ul a {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 0;
-    line-height: 50px;
-    padding: 0 15px;
-    text-decoration: none;
+  .menu > li {
+    margin: 0 1rem;
     overflow: hidden;
-    color: #333;
-    text-align: left;
   }
 
-  .a-header ul a:hover,
-  .a-header ul a:active,
-  .a-header ul a:focus,
-  .a-header ul a:visited {
-    text-decoration: none;
-    background: #fff;
-    border-bottom-color: #08c;
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  /* Animate height of 'a' element in order to reveal the menu on check (IE9 or higher) */
-  #main-nav:checked ~ ul a {
-    height: 50px;
+  #menu-toggle {
+    display: none;
+  }
+
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: rgba(12, 15, 30, 1);
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+
+  .menu-button::before {
+    content: "";
+    margin-top: -8px;
+  }
+
+  .menu-button::after {
+    content: "";
+    margin-top: 8px;
+  }
+
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+
+  @media (min-width: 1024px) {
+    .top-nav {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .menu-button-container {
+      display: flex;
+    }
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 100px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      background-color: rgba(252, 235, 216, 1);
+    }
+    .menu > li:not(:last-child) {
+      color: rgba(12, 15, 30, 1);
+    }
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .desktop-menu {
+      display: flex;
+    }
   }
 </style>
