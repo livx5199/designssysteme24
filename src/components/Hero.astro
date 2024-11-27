@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import heroimage from "../assets/images/heroimage.jpg";
+import baggrundsgrafik from "../assets/images/baggrund-header-h1.svg";
+import tpstjerner from "../assets/images/trustpilot-stjerner.svg";
+import boelge from "../assets/images/boelge.svg";
+import Button from "./Button.astro";
+---
+
+<section class="w-full h-screen grid grid-cols-10 grid-rows-4">
+  <Image
+    alt="Facebook logo"
+    src={heroimage}
+    class="w-full h-screen object-cover row-start-1 row-span-4 col-start-1 col-span-10"
+  />
+
+  <div
+    class="grid grid-rows-1 grid-cols-1 row-start-3 row-span-1 col-start-1 col-span-10 items-center"
+  >
+    <Image
+      alt="baggrundsgrafik til overskrift"
+      src={baggrundsgrafik}
+      class="w-full h-full row-start-1 row-span-1 col-start-1 col-span-1 bg-grafik"
+    />
+    <div
+      class="flex flex-col row-start-1 row-span-1 col-start-1 col-span-1 gap-2 mobil"
+    >
+      <h1 class="h1-mobile lg:h1-desktop text-center">HØJSKOLE I UDLANDET</h1>
+      <h2 class="h4-mobile lg:h4-desktop text-center">
+        Eventyrlige højskoleophold i udlandet for unge.
+      </h2>
+      <div class="flex flex-row items-center gap-2 self-center">
+        <Image alt="4.8 stjerner på Trustpilot" src={tpstjerner} class="" />
+        <h3 class="p-mobile lg:p-desktop">4.8 <a href="">Trustpilot</a></h3>
+      </div>
+    </div>
+
+    <div class="justify-self-center">
+      <Button>BOOK DIN TUR</Button>
+    </div>
+  </div>
+  <Image
+    alt="Facebook logo"
+    src={boelge}
+    class="object-cover row-start-4 row-span-1 col-start-1 col-span-10 self-end"
+  />
+</section>
+
+<style>
+  @media screen and (max-width: 1024px) {
+    .mobil {
+      background-color: rgba(252, 235, 216, 1);
+    }
+
+    .bg-grafik {
+      display: none;
+    }
+  }
+</style>
