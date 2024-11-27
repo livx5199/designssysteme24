@@ -7,11 +7,11 @@ import boelge from "../assets/images/boelge.svg";
 import Button from "./Button.astro";
 ---
 
-<section class="w-full h-screen grid grid-cols-10 grid-rows-4">
+<section class="w-full h-screen grid grid-cols-10 grid-rows-5">
   <Image
     alt="Facebook logo"
     src={heroimage}
-    class="w-full h-screen object-cover row-start-1 row-span-4 col-start-1 col-span-10"
+    class="w-full h-screen object-cover row-start-1 row-span-5 col-start-1 col-span-10"
   />
 
   <div
@@ -31,7 +31,11 @@ import Button from "./Button.astro";
       </h2>
       <div class="flex flex-row items-center gap-2 self-center">
         <Image alt="4.8 stjerner på Trustpilot" src={tpstjerner} class="" />
-        <h3 class="p-mobile lg:p-desktop">4.8 <a href="">Trustpilot</a></h3>
+        <h3 class="p-mobile lg:p-desktop">
+          4.8 <a href="https://dk.trustpilot.com/review/www.hojskolendk.dk"
+            >Trustpilot</a
+          >
+        </h3>
       </div>
     </div>
 
@@ -42,7 +46,7 @@ import Button from "./Button.astro";
   <Image
     alt="Facebook logo"
     src={boelge}
-    class="object-cover row-start-4 row-span-1 col-start-1 col-span-10 self-end"
+    class="object-cover row-start-5 row-span-1 col-start-1 col-span-10 self-end"
   />
 </section>
 
@@ -50,6 +54,7 @@ import Button from "./Button.astro";
   @media screen and (max-width: 1024px) {
     .mobil {
       background-color: rgba(254, 246, 238, 1);
+      padding: 2%;
     }
 
     .bg-grafik {
