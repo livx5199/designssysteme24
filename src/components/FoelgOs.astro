@@ -8,8 +8,8 @@ import instagram5 from "../assets/images/instagram5.jpg";
 import instagram6 from "../assets/images/instagram6.jpg";
 import tiktok1 from "../assets/videos/tiktok1.mp4";
 import tiktok2 from "../assets/videos/tiktok2.mp4";
-import tiktoklogo from "../assets/images/tiktok-ikon.svg";
-import instagramlogo from "../assets/images/instagram-ikon.svg";
+import tiktoklogo from "../assets/images/tiktok-ikon-hover.svg";
+import instagramlogo from "../assets/images/instagram-ikon-hover.svg";
 ---
 
 <section class="flex flex-col place-items-center m-sm gap-10">
@@ -21,12 +21,15 @@ import instagramlogo from "../assets/images/instagram-ikon.svg";
       medier og se vores mange eventyr!
     </p>
   </div>
-  <div class="grid grid-cols-5 grid-rows-2 gap-2 h-5/6 w-5/6">
+  <div
+    class="grid grid-cols-2 grid-rows-4 lg:grid-cols-5 lg:grid-rows-2 gap-2 h-5/6 w-5/6"
+  >
     <div
       class="col-start-1 col-span-1 row-start-1 row-span-2 relative container"
     >
       <a href="https://www.tiktok.com/@hojskolendk"
         ><video
+          muted
           src="../src/assets/videos/tiktok1.mp4"
           class="h-full w-full object-cover rounded-default hover:opacity-85"
         ></video>
@@ -70,7 +73,7 @@ import instagramlogo from "../assets/images/instagram-ikon.svg";
       >
     </div>
     <div
-      class="col-start-3 col-span-1 row-start-1 row-span-1 relative container"
+      class="col-start-1 row-start-3 lg:col-start-3 col-span-1 lg:row-start-1 row-span-1 relative container"
     >
       <a href="https://www.instagram.com/hojskolendk/"
         ><Image
@@ -86,7 +89,7 @@ import instagramlogo from "../assets/images/instagram-ikon.svg";
       >
     </div>
     <div
-      class="col-start-3 col-span-1 row-start-2 row-span-1 relative container"
+      class="lg:col-start-3 col-start-1 col-span-1 row-start-4 lg:row-start-2 row-span-1 relative container"
     >
       <a href="https://www.instagram.com/hojskolendk/"
         ><Image
@@ -102,10 +105,11 @@ import instagramlogo from "../assets/images/instagram-ikon.svg";
       >
     </div>
     <div
-      class="col-start-4 col-span-1 row-start-1 row-span-2 relative container"
+      class="col-start-2 lg:col-start-4 col-span-1 lg:row-start-1 row-start-3 row-span-2 relative container"
     >
       <a href="https://www.tiktok.com/@hojskolendk"
         ><video
+          muted
           src="../src/assets/videos/tiktok2.mp4"
           class="h-full w-full object-cover rounded-default hover:opacity-85"
         ></video>
@@ -117,7 +121,7 @@ import instagramlogo from "../assets/images/instagram-ikon.svg";
       >
     </div>
     <div
-      class="col-start-5 col-span-1 row-start-1 row-span-1 relative container"
+      class="hidden lg:block lg:col-start-5 lg:col-span-1 lg:row-start-1 lg:row-span-1 relative container"
     >
       <a href="https://www.instagram.com/hojskolendk/"
         ><Image
@@ -133,7 +137,7 @@ import instagramlogo from "../assets/images/instagram-ikon.svg";
       >
     </div>
     <div
-      class="col-start-5 col-span-1 row-start-2 row-span-1 relative container"
+      class="hidden lg:block lg:col-start-5 lg:col-span-1 lg:row-start-2 lg:row-span-1 relative container"
     >
       <a href="https://www.instagram.com/hojskolendk/"
         ><Image
