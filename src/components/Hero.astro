@@ -15,7 +15,7 @@ import Button from "./Button.astro";
   />
 
   <div
-    class="grid grid-rows-1 grid-cols-1 row-start-3 row-span-1 col-start-1 col-span-10 items-center"
+    class="grid grid-rows-1 grid-cols-1 row-start-3 row-span-1 col-start-1 col-span-10 items-center parallaxelement"
   >
     <Image
       alt="baggrundsgrafik til overskrift"
@@ -62,3 +62,11 @@ import Button from "./Button.astro";
     }
   }
 </style>
+
+<script>
+  import { animate, stagger, inView, scroll, timeline } from "motion";
+
+  scroll(animate(".parallaxelement", { y: [-50, 50] }), {
+    target: document.querySelector(".parallaxelement"),
+  });
+</script>
