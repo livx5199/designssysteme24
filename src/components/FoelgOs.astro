@@ -1,0 +1,184 @@
+---
+import { Image } from "astro:assets";
+import instagram1 from "../assets/images/instagram1.jpg";
+import instagram2 from "../assets/images/instagram2.jpg";
+import instagram3 from "../assets/images/instagram3.jpg";
+import instagram4 from "../assets/images/instagram4.jpg";
+import instagram5 from "../assets/images/instagram5.jpg";
+import instagram6 from "../assets/images/instagram6.jpg";
+import tiktok1 from "../assets/videos/tiktok1.mp4";
+import tiktok2 from "../assets/videos/tiktok2.mp4";
+import tiktoklogo from "../assets/images/tiktok-ikon.svg";
+import instagramlogo from "../assets/images/instagram-ikon.svg";
+---
+
+<section class="flex flex-col place-items-center m-sm gap-10">
+  <div class="flex flex-col items-center w-3/5 gap-2">
+    <h2 class="h2-mobile lg:h2-desktop text-center">FØLG OS</h2>
+    <p class="p-mobile lg:p-desktop text-center">
+      Der venter dig et unikt rejseeventyr når du tager på højskole i udlandet,
+      med et stærkt sammenhold og fede rejseoplevelser. Følg os på vores sociale
+      medier og se vores mange eventyr!
+    </p>
+  </div>
+  <div class="grid grid-cols-5 grid-rows-2 gap-2 h-5/6 w-5/6">
+    <div
+      class="col-start-1 col-span-1 row-start-1 row-span-2 relative container"
+    >
+      <a href="https://www.tiktok.com/@hojskolendk"
+        ><video
+          src="../src/assets/videos/tiktok1.mp4"
+          class="h-full w-full object-cover rounded-default hover:opacity-85"
+        ></video>
+        <Image
+          alt="Instagram opslag"
+          src={tiktoklogo}
+          class="h-22 w-20 aspect-square object-cover opacity-0 hover"
+        /></a
+      >
+    </div>
+    <div
+      class="col-start-2 col-span-1 row-start-1 row-span-1 relative container"
+    >
+      <a href="https://www.instagram.com/hojskolendk/"
+        ><Image
+          alt="Instagram opslag"
+          src={instagram1}
+          class="h-full w-full aspect-square object-cover rounded-default hover:opacity-85"
+        />
+        <Image
+          alt="Instagram opslag"
+          src={instagramlogo}
+          class="h-20 w-20 aspect-square object-cover opacity-0 hover"
+        /></a
+      >
+    </div>
+    <div
+      class="col-start-2 col-span-1 row-start-2 row-span-1 relative container"
+    >
+      <a href="https://www.instagram.com/hojskolendk/"
+        ><Image
+          alt="Instagram opslag"
+          src={instagram2}
+          class="h-full w-full aspect-square object-cover rounded-default hover:opacity-85"
+        />
+        <Image
+          alt="Instagram opslag"
+          src={instagramlogo}
+          class="h-20 w-20 aspect-square object-cover opacity-0 hover"
+        /></a
+      >
+    </div>
+    <div
+      class="col-start-3 col-span-1 row-start-1 row-span-1 relative container"
+    >
+      <a href="https://www.instagram.com/hojskolendk/"
+        ><Image
+          alt="Instagram opslag"
+          src={instagram3}
+          class="h-full w-full aspect-square object-cover rounded-default hover:opacity-85"
+        />
+        <Image
+          alt="Instagram opslag"
+          src={instagramlogo}
+          class="h-20 w-20 aspect-square object-cover opacity-0 hover"
+        /></a
+      >
+    </div>
+    <div
+      class="col-start-3 col-span-1 row-start-2 row-span-1 relative container"
+    >
+      <a href="https://www.instagram.com/hojskolendk/"
+        ><Image
+          alt="Instagram opslag"
+          src={instagram4}
+          class="h-full w-full aspect-square object-cover rounded-default hover:opacity-85"
+        />
+        <Image
+          alt="Instagram opslag"
+          src={instagramlogo}
+          class="h-20 w-20 aspect-square object-cover opacity-0 hover"
+        /></a
+      >
+    </div>
+    <div
+      class="col-start-4 col-span-1 row-start-1 row-span-2 relative container"
+    >
+      <a href="https://www.tiktok.com/@hojskolendk"
+        ><video
+          src="../src/assets/videos/tiktok2.mp4"
+          class="h-full w-full object-cover rounded-default hover:opacity-85"
+        ></video>
+        <Image
+          alt="Instagram opslag"
+          src={tiktoklogo}
+          class="h-22 w-20 aspect-square object-cover opacity-0 hover"
+        /></a
+      >
+    </div>
+    <div
+      class="col-start-5 col-span-1 row-start-1 row-span-1 relative container"
+    >
+      <a href="https://www.instagram.com/hojskolendk/"
+        ><Image
+          alt="Instagram opslag"
+          src={instagram5}
+          class="h-full w-full aspect-square object-cover rounded-default hover:opacity-85"
+        />
+        <Image
+          alt="Instagram opslag"
+          src={instagramlogo}
+          class="h-20 w-20 aspect-square object-cover opacity-0 hover"
+        /></a
+      >
+    </div>
+    <div
+      class="col-start-5 col-span-1 row-start-2 row-span-1 relative container"
+    >
+      <a href="https://www.instagram.com/hojskolendk/"
+        ><Image
+          alt="Instagram opslag"
+          src={instagram6}
+          class="h-full w-full aspect-square object-cover rounded-default hover:opacity-85"
+        />
+        <Image
+          alt="Instagram opslag"
+          src={instagramlogo}
+          class="h-20 w-20 aspect-square object-cover opacity-0 hover"
+        /></a
+      >
+    </div>
+  </div>
+</section>
+
+<style>
+  .hover {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .container:hover .hover {
+    opacity: 1;
+  }
+</style>
+
+<script>
+  const videos = document.querySelectorAll("video");
+
+  videos.forEach((video) => {
+    video.addEventListener("mouseenter", () => {
+      video.play();
+    });
+
+    video.addEventListener("mouseleave", () => {
+      video.pause();
+      video.currentTime = 0;
+    });
+  });
+</script>
