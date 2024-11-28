@@ -1,7 +1,11 @@
 ---
 import Carousel_cards from "../components/Carousel_cards.astro"
+import MyCustomImage from "../components/MyCustomImage.astro";
+import mobileImage from "../assets/images/introimgmobile.svg";
+import desktopImage from "../assets/images/introimg.svg";
 ---
 <section class="mx-sm lg:mx-3xl py-m lg:py-xl text-vulcan-950* relative">
+
     <h1 class="text-xxlarge-mobile lg:text-xxxlarge font-display text-center pb-xs">HØJSKOLE OPHOLD</h1>
 
     <!-- 45 to 80 characters (per line) -->
@@ -47,19 +51,18 @@ import Carousel_cards from "../components/Carousel_cards.astro"
       </div>
     </div>
 
-       <button class="drop-shadow-lg prev px-fit py-fit absolute top-[55%] outline-none border-none cursor-pointer
+       <button class="drop-shadow-lg prev px-fit py-fit absolute top-[55%] outline-none border-none cursor-none
         transition-transform duration-[0.2s] ease-in-out left-0 active:drop-shadow-xl
-        active:scale-90 hover:-translate-y-3.5 hover:scale-95">
+        active:scale-90 hover:-translate-y-3.5 hover:scale-95 jello-horizontal">
         <img src="../images/venstre.svg" alt="svg højre knap">
     </button>
         
-    <button class="drop-shadow-lg next px-fit py-fit absolute top-[55%] outline-none border-none cursor-pointer
+    <button class="drop-shadow-lg next px-fit py-fit absolute top-[55%] outline-none border-none cursor-none
         transition-transform duration-[0.2s] ease-in-out right-0 active:drop-shadow-xl
-        active:scale-90 hover:-translate-y-3.5 hover:scale-95">
+        active:scale-90 hover:-translate-y-3.5 hover:scale-95 jello-horizontal">
         <img src="../images/hojre.svg" alt="svg højre knap">
     </button>
   </section>
-
 
   <style>
     /* Hide scrollbar for Chrome, Safari and Opera */
