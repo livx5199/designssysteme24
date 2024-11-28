@@ -1,264 +1,277 @@
 ---
 import { Image } from "astro:assets";
 import boelge from "../assets/images/boelge-orange.svg";
-import pilned from "../assets/images/pilned.svg";
+import billede from "../assets/images/faqbillede.jpg";
 ---
 
-<section class="lg:flex">
-  <div class="flex flex-col justify-between items-center m-sm">
-    <h2 class="h2-mobile m-sm">FAQ</h2>
+<section class="flex flex-col items-center m-sm">
+  <h2 class="h2-mobile lg:h2-desktop">FAQ</h2>
+  <div
+    class="flex flex-col lg:grid grid-cols-2 items-center lg:items-start mt-sm"
+  >
+    <div class="flex flex-col items-center lg:m-sm mb-sm">
+      <div class="flex flex-col items-center w-full gap-3">
+        <div class="w-full flex flex-col">
+          <details class="group flex flex-col">
+            <summary
+              class="flex cursor-pointer list-none justify-between font-medium p-sm bg-blaze-orange-100 rounded-t-default"
+            >
+              <span class="h4-mobile"> Rejse højskole</span>
+              <span class="transition group-open:rotate-180">
+                <svg
+                  fill="none"
+                  height="24"
+                  shape-rendering="geometricPrecision"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="bg-blaze-orange-200 p-sm rounded-b-default">
+              Drømmer du om at rejse på højskole i udlandet for unge? Når du
+              rejser med HÖJSKOLENDK, får du dit livs eventyr og vi garanterer
+              dig masser af fællesskab, fantastiske oplevelser og meningsfuld
+              læring. Et højskoleophold i udlandet er noget, du bare skal prøve
+              mindst én gang i dit liv – du vil aldrig fortryde, at du tog
+              afsted. Og du kan glæde dig til nye venskaber og oplevelser for
+              livet. Med HÖJSKOLENDK kan du komme på rejsende højskole i stort
+              set alle hjørner af verdenen. Drømmer du om smukke og vilde
+              naturoplevelser på Bali, Hawaii, Maldiverne eller i Australien?
+              Storbyseventyr i New York, Sydney, Tokyo, Bangkok eller Rio de
+              Janeiro? Kulturelle oplevelser og autentiske menneskemøder i
+              Indien, Bolivia, Sri Lanka, Japan eller Mexico? Fede adventure
+              aktiviteter med masser af adrenalin i New Zealand, Nepal, Ecuador
+              eller Costa Rica? Vælg mellem et af vores fantastiske
+              højskoleophold i udlandet og lad verden gøre dig endnu mere
+              nysgerrig. Du rejser altid med andre unge mennesker på din egen
+              alder og danske rejseledere og undervisere. På højskolerejsen
+              kommer du ikke kun til at opleve og forstå andre spændende
+              kulturer. Rejserne giver også et unikt indblik i dig selv, så du
+              kommer hjem med mere selvtillid og selvværd og står endnu stærkere
+              som menneske. At rejse med en højskole er ikke blot et eventyr ud
+              i verden – det er også en spændende rejse i forhold til dig og din
+              personlige udvikling.
+            </p>
+          </details>
+        </div>
 
-    <div class="flex flex-col items-center gap-2 w-4/5">
-      <div class="w-4/5">
-        <details class="group">
-          <summary
-            class="flex cursor-pointer list-none justify-between font-medium p-sm bg-blaze-orange-100"
-          >
-            <span> Rejse højskole</span>
-            <span class="transition group-open:rotate-180">
-              <svg
-                fill="none"
-                height="24"
-                shape-rendering="geometricPrecision"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-                width="24"
-              >
-                <path d="M6 9l6 6 6-6"></path>
-              </svg>
-            </span>
-          </summary>
-          <p
-            class="group-open:animate-fadeIn bg-blaze-orange-200 p-sm dropdown_menu-6"
-          >
-            Drømmer du om at rejse på højskole i udlandet for unge? Når du
-            rejser med HÖJSKOLENDK, får du dit livs eventyr og vi garanterer dig
-            masser af fællesskab, fantastiske oplevelser og meningsfuld læring.
-            Et højskoleophold i udlandet er noget, du bare skal prøve mindst én
-            gang i dit liv – du vil aldrig fortryde, at du tog afsted. Og du kan
-            glæde dig til nye venskaber og oplevelser for livet. Med HÖJSKOLENDK
-            kan du komme på rejsende højskole i stort set alle hjørner af
-            verdenen. Drømmer du om smukke og vilde naturoplevelser på Bali,
-            Hawaii, Maldiverne eller i Australien? Storbyseventyr i New York,
-            Sydney, Tokyo, Bangkok eller Rio de Janeiro? Kulturelle oplevelser
-            og autentiske menneskemøder i Indien, Bolivia, Sri Lanka, Japan
-            eller Mexico? Fede adventure aktiviteter med masser af adrenalin i
-            New Zealand, Nepal, Ecuador eller Costa Rica? Vælg mellem et af
-            vores fantastiske højskoleophold i udlandet og lad verden gøre dig
-            endnu mere nysgerrig. Du rejser altid med andre unge mennesker på
-            din egen alder og danske rejseledere og undervisere. På
-            højskolerejsen kommer du ikke kun til at opleve og forstå andre
-            spændende kulturer. Rejserne giver også et unikt indblik i dig selv,
-            så du kommer hjem med mere selvtillid og selvværd og står endnu
-            stærkere som menneske. At rejse med en højskole er ikke blot et
-            eventyr ud i verden – det er også en spændende rejse i forhold til
-            dig og din personlige udvikling.
-          </p>
-        </details>
-      </div>
+        <div class="w-full">
+          <details class="group">
+            <summary
+              class="flex cursor-pointer list-none justify-between font-medium p-sm bg-blaze-orange-100 rounded-t-default"
+            >
+              <span class="h4-mobile">Højskoleophold i udlandet</span>
+              <span class="transition group-open:rotate-180">
+                <svg
+                  fill="none"
+                  height="24"
+                  shape-rendering="geometricPrecision"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p
+              class="group-open:animate-fadeIn bg-blaze-orange-200 p-sm dropdown_menu-6 rounded-b-default"
+            >
+              HÖJSKOLENDK tilbyder alverdens skønne rejser og ophold og du kan
+              både komme på højskoleophold i udlandet i løbet af året eller på
+              højskole i udlandet i sommerferien. Begge muligheder er enormt
+              populære blandt vores skønne højskoleelever. Højskoleophold i
+              sommerferien er typisk kortere og varer ca. 5 uger. På de højskole
+              rejser oplever du flere lande og forskellige kulturer og
+              traditioner, langt fra det danske vi kender. Det er et oplagt
+              eventyr til dig, der gerne vil ud og rejse, møde andre unge
+              mennesker og udvikle dig som menneske i løbet af din sommerferie,
+              inden du fx starter på nyt studie eller job. Vores højskoleophold
+              i løbet af året varer mellem 2-3 måneder. De rejser er oplagt for
+              dig, der holder sabbatår og gerne vil ud og opleve verdenen hvor
+              du udvikler dig selv på et personligt plan. Tag på højskole i
+              udlandet med andre og få en uforglemmelig oplevelse. Vi tør godt
+              love dig, at det bliver dit livs eventyr!
+            </p>
+          </details>
+        </div>
 
-      <div class="w-4/5">
-        <details class="group">
-          <summary
-            class="flex cursor-pointer list-none justify-between font-medium p-sm bg-blaze-orange-100"
-          >
-            <span>Højskoleophold i udlandet</span>
-            <span class="transition group-open:rotate-180">
-              <svg
-                fill="none"
-                height="24"
-                shape-rendering="geometricPrecision"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-                width="24"
+        <div class="w-full">
+          <details class="group">
+            <summary
+              class="flex cursor-pointer list-none justify-between font-medium p-sm bg-blaze-orange-100 rounded-t-default"
+            >
+              <span class="h4-mobile"
+                >Højskole i udlandet for unge mennesker</span
               >
-                <path d="M6 9l6 6 6-6"></path>
-              </svg>
-            </span>
-          </summary>
-          <p
-            class="group-open:animate-fadeIn bg-blaze-orange-200 p-sm dropdown_menu-6"
-          >
-            HÖJSKOLENDK tilbyder alverdens skønne rejser og ophold og du kan
-            både komme på højskoleophold i udlandet i løbet af året eller på
-            højskole i udlandet i sommerferien. Begge muligheder er enormt
-            populære blandt vores skønne højskoleelever. Højskoleophold i
-            sommerferien er typisk kortere og varer ca. 5 uger. På de højskole
-            rejser oplever du flere lande og forskellige kulturer og
-            traditioner, langt fra det danske vi kender. Det er et oplagt
-            eventyr til dig, der gerne vil ud og rejse, møde andre unge
-            mennesker og udvikle dig som menneske i løbet af din sommerferie,
-            inden du fx starter på nyt studie eller job. Vores højskoleophold i
-            løbet af året varer mellem 2-3 måneder. De rejser er oplagt for dig,
-            der holder sabbatår og gerne vil ud og opleve verdenen hvor du
-            udvikler dig selv på et personligt plan. Tag på højskole i udlandet
-            med andre og få en uforglemmelig oplevelse. Vi tør godt love dig, at
-            det bliver dit livs eventyr!
-          </p>
-        </details>
-      </div>
+              <span class="transition group-open:rotate-180">
+                <svg
+                  fill="none"
+                  height="24"
+                  shape-rendering="geometricPrecision"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p
+              class="group-open:animate-fadeIn bg-blaze-orange-200 p-sm dropdown_menu-6 rounded-b-default"
+            >
+              Drømmer du om at rejse på højskole i udlandet for unge? Når du
+              rejser med HÖJSKOLENDK, får du dit livs eventyr og vi garanterer
+              dig masser af fællesskab, fantastiske oplevelser og meningsfuld
+              læring. Et højskoleophold i udlandet er noget, du bare skal prøve
+              mindst én gang i dit liv – du vil aldrig fortryde, at du tog
+              afsted. Og du kan glæde dig til nye venskaber og oplevelser for
+              livet. Med HÖJSKOLENDK kan du komme på rejsende højskole i stort
+              set alle hjørner af verdenen. Drømmer du om smukke og vilde
+              naturoplevelser på Bali, Hawaii, Maldiverne eller i Australien?
+              Storbyseventyr i New York, Sydney, Tokyo, Bangkok eller Rio de
+              Janeiro? Kulturelle oplevelser og autentiske menneskemøder i
+              Indien, Bolivia, Sri Lanka, Japan eller Mexico? Fede adventure
+              aktiviteter med masser af adrenalin i New Zealand, Nepal, Ecuador
+              eller Costa Rica? Vælg mellem et af vores fantastiske
+              højskoleophold i udlandet og lad verden gøre dig endnu mere
+              nysgerrig. Du rejser altid med andre unge mennesker på din egen
+              alder og danske rejseledere og undervisere. På højskolerejsen
+              kommer du ikke kun til at opleve og forstå andre spændende
+              kulturer. Rejserne giver også et unikt indblik i dig selv, så du
+              kommer hjem med mere selvtillid og selvværd og står endnu stærkere
+              som menneske. At rejse med en højskole er ikke blot et eventyr ud
+              i verden – det er også en spændende rejse i forhold til dig og din
+              personlige udvikling.
+            </p>
+          </details>
+        </div>
 
-      <div class="w-4/5">
-        <details class="group">
-          <summary
-            class="flex cursor-pointer list-none justify-between font-medium p-sm bg-blaze-orange-100"
-          >
-            <span>Højskole i udlandet for unge mennesker</span>
-            <span class="transition group-open:rotate-180">
-              <svg
-                fill="none"
-                height="24"
-                shape-rendering="geometricPrecision"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-                width="24"
+        <div class="w-full">
+          <details class="group">
+            <summary
+              class="flex cursor-pointer list-none justify-between font-medium p-sm bg-blaze-orange-100 rounded-t-default"
+            >
+              <span class="h4-mobile"
+                >Uforglemmeligt højskoleophold i udlandet</span
               >
-                <path d="M6 9l6 6 6-6"></path>
-              </svg>
-            </span>
-          </summary>
-          <p
-            class="group-open:animate-fadeIn bg-blaze-orange-200 p-sm dropdown_menu-6"
-          >
-            Drømmer du om at rejse på højskole i udlandet for unge? Når du
-            rejser med HÖJSKOLENDK, får du dit livs eventyr og vi garanterer dig
-            masser af fællesskab, fantastiske oplevelser og meningsfuld læring.
-            Et højskoleophold i udlandet er noget, du bare skal prøve mindst én
-            gang i dit liv – du vil aldrig fortryde, at du tog afsted. Og du kan
-            glæde dig til nye venskaber og oplevelser for livet. Med HÖJSKOLENDK
-            kan du komme på rejsende højskole i stort set alle hjørner af
-            verdenen. Drømmer du om smukke og vilde naturoplevelser på Bali,
-            Hawaii, Maldiverne eller i Australien? Storbyseventyr i New York,
-            Sydney, Tokyo, Bangkok eller Rio de Janeiro? Kulturelle oplevelser
-            og autentiske menneskemøder i Indien, Bolivia, Sri Lanka, Japan
-            eller Mexico? Fede adventure aktiviteter med masser af adrenalin i
-            New Zealand, Nepal, Ecuador eller Costa Rica? Vælg mellem et af
-            vores fantastiske højskoleophold i udlandet og lad verden gøre dig
-            endnu mere nysgerrig. Du rejser altid med andre unge mennesker på
-            din egen alder og danske rejseledere og undervisere. På
-            højskolerejsen kommer du ikke kun til at opleve og forstå andre
-            spændende kulturer. Rejserne giver også et unikt indblik i dig selv,
-            så du kommer hjem med mere selvtillid og selvværd og står endnu
-            stærkere som menneske. At rejse med en højskole er ikke blot et
-            eventyr ud i verden – det er også en spændende rejse i forhold til
-            dig og din personlige udvikling.
-          </p>
-        </details>
-      </div>
+              <span class="transition group-open:rotate-180">
+                <svg
+                  fill="none"
+                  height="24"
+                  shape-rendering="geometricPrecision"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p
+              class="group-open:animate-fadeIn bg-blaze-orange-200 p-sm dropdown_menu-6 rounded-b-default"
+            >
+              Drømmer du om at rejse på højskole i udlandet for unge? Når du
+              rejser med HÖJSKOLENDK, får du dit livs eventyr og vi garanterer
+              dig masser af fællesskab, fantastiske oplevelser og meningsfuld
+              læring. Et højskoleophold i udlandet er noget, du bare skal prøve
+              mindst én gang i dit liv – du vil aldrig fortryde, at du tog
+              afsted. Og du kan glæde dig til nye venskaber og oplevelser for
+              livet. Med HÖJSKOLENDK kan du komme på rejsende højskole i stort
+              set alle hjørner af verdenen. Drømmer du om smukke og vilde
+              naturoplevelser på Bali, Hawaii, Maldiverne eller i Australien?
+              Storbyseventyr i New York, Sydney, Tokyo, Bangkok eller Rio de
+              Janeiro? Kulturelle oplevelser og autentiske menneskemøder i
+              Indien, Bolivia, Sri Lanka, Japan eller Mexico? Fede adventure
+              aktiviteter med masser af adrenalin i New Zealand, Nepal, Ecuador
+              eller Costa Rica? Vælg mellem et af vores fantastiske
+              højskoleophold i udlandet og lad verden gøre dig endnu mere
+              nysgerrig. Du rejser altid med andre unge mennesker på din egen
+              alder og danske rejseledere og undervisere. På højskolerejsen
+              kommer du ikke kun til at opleve og forstå andre spændende
+              kulturer. Rejserne giver også et unikt indblik i dig selv, så du
+              kommer hjem med mere selvtillid og selvværd og står endnu stærkere
+              som menneske. At rejse med en højskole er ikke blot et eventyr ud
+              i verden – det er også en spændende rejse i forhold til dig og din
+              personlige udvikling.
+            </p>
+          </details>
+        </div>
 
-      <div class="w-4/5">
-        <details class="group">
-          <summary
-            class="flex cursor-pointer list-none justify-between font-medium p-sm bg-blaze-orange-100"
-          >
-            <span>Uforglemmeligt højskoleophold i udlandet</span>
-            <span class="transition group-open:rotate-180">
-              <svg
-                fill="none"
-                height="24"
-                shape-rendering="geometricPrecision"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-                width="24"
-              >
-                <path d="M6 9l6 6 6-6"></path>
-              </svg>
-            </span>
-          </summary>
-          <p
-            class="group-open:animate-fadeIn bg-blaze-orange-200 p-sm dropdown_menu-6"
-          >
-            Drømmer du om at rejse på højskole i udlandet for unge? Når du
-            rejser med HÖJSKOLENDK, får du dit livs eventyr og vi garanterer dig
-            masser af fællesskab, fantastiske oplevelser og meningsfuld læring.
-            Et højskoleophold i udlandet er noget, du bare skal prøve mindst én
-            gang i dit liv – du vil aldrig fortryde, at du tog afsted. Og du kan
-            glæde dig til nye venskaber og oplevelser for livet. Med HÖJSKOLENDK
-            kan du komme på rejsende højskole i stort set alle hjørner af
-            verdenen. Drømmer du om smukke og vilde naturoplevelser på Bali,
-            Hawaii, Maldiverne eller i Australien? Storbyseventyr i New York,
-            Sydney, Tokyo, Bangkok eller Rio de Janeiro? Kulturelle oplevelser
-            og autentiske menneskemøder i Indien, Bolivia, Sri Lanka, Japan
-            eller Mexico? Fede adventure aktiviteter med masser af adrenalin i
-            New Zealand, Nepal, Ecuador eller Costa Rica? Vælg mellem et af
-            vores fantastiske højskoleophold i udlandet og lad verden gøre dig
-            endnu mere nysgerrig. Du rejser altid med andre unge mennesker på
-            din egen alder og danske rejseledere og undervisere. På
-            højskolerejsen kommer du ikke kun til at opleve og forstå andre
-            spændende kulturer. Rejserne giver også et unikt indblik i dig selv,
-            så du kommer hjem med mere selvtillid og selvværd og står endnu
-            stærkere som menneske. At rejse med en højskole er ikke blot et
-            eventyr ud i verden – det er også en spændende rejse i forhold til
-            dig og din personlige udvikling.
-          </p>
-        </details>
-      </div>
-
-      <div class="w-4/5">
-        <details class="group">
-          <summary
-            class="flex cursor-pointer list-none justify-between font-medium p-sm bg-blaze-orange-100"
-          >
-            <span>Hvad med økonomien?</span>
-            <span class="transition group-open:rotate-180">
-              <svg
-                fill="none"
-                height="24"
-                shape-rendering="geometricPrecision"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-                width="24"
-              >
-                <path d="M6 9l6 6 6-6"></path>
-              </svg>
-            </span>
-          </summary>
-          <p
-            class="group-open:animate-fadeIn bg-blaze-orange-200 p-sm dropdown_menu-6"
-          >
-            Drømmer du om at rejse på højskole i udlandet for unge? Når du
-            rejser med HÖJSKOLENDK, får du dit livs eventyr og vi garanterer dig
-            masser af fællesskab, fantastiske oplevelser og meningsfuld læring.
-            Et højskoleophold i udlandet er noget, du bare skal prøve mindst én
-            gang i dit liv – du vil aldrig fortryde, at du tog afsted. Og du kan
-            glæde dig til nye venskaber og oplevelser for livet. Med HÖJSKOLENDK
-            kan du komme på rejsende højskole i stort set alle hjørner af
-            verdenen. Drømmer du om smukke og vilde naturoplevelser på Bali,
-            Hawaii, Maldiverne eller i Australien? Storbyseventyr i New York,
-            Sydney, Tokyo, Bangkok eller Rio de Janeiro? Kulturelle oplevelser
-            og autentiske menneskemøder i Indien, Bolivia, Sri Lanka, Japan
-            eller Mexico? Fede adventure aktiviteter med masser af adrenalin i
-            New Zealand, Nepal, Ecuador eller Costa Rica? Vælg mellem et af
-            vores fantastiske højskoleophold i udlandet og lad verden gøre dig
-            endnu mere nysgerrig. Du rejser altid med andre unge mennesker på
-            din egen alder og danske rejseledere og undervisere. På
-            højskolerejsen kommer du ikke kun til at opleve og forstå andre
-            spændende kulturer. Rejserne giver også et unikt indblik i dig selv,
-            så du kommer hjem med mere selvtillid og selvværd og står endnu
-            stærkere som menneske. At rejse med en højskole er ikke blot et
-            eventyr ud i verden – det er også en spændende rejse i forhold til
-            dig og din personlige udvikling.
-          </p>
-        </details>
+        <div class="w-full">
+          <details class="group">
+            <summary
+              class="flex cursor-pointer list-none justify-between font-medium p-sm bg-blaze-orange-100 rounded-t-default"
+            >
+              <span class="h4-mobile">Hvad med økonomien?</span>
+              <span class="transition group-open:rotate-180">
+                <svg
+                  fill="none"
+                  height="24"
+                  shape-rendering="geometricPrecision"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  width="24"
+                >
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p
+              class="group-open:animate-fadeIn bg-blaze-orange-200 p-sm dropdown_menu-6 rounded-b-default"
+            >
+              Drømmer du om at rejse på højskole i udlandet for unge? Når du
+              rejser med HÖJSKOLENDK, får du dit livs eventyr og vi garanterer
+              dig masser af fællesskab, fantastiske oplevelser og meningsfuld
+              læring. Et højskoleophold i udlandet er noget, du bare skal prøve
+              mindst én gang i dit liv – du vil aldrig fortryde, at du tog
+              afsted. Og du kan glæde dig til nye venskaber og oplevelser for
+              livet. Med HÖJSKOLENDK kan du komme på rejsende højskole i stort
+              set alle hjørner af verdenen. Drømmer du om smukke og vilde
+              naturoplevelser på Bali, Hawaii, Maldiverne eller i Australien?
+              Storbyseventyr i New York, Sydney, Tokyo, Bangkok eller Rio de
+              Janeiro? Kulturelle oplevelser og autentiske menneskemøder i
+              Indien, Bolivia, Sri Lanka, Japan eller Mexico? Fede adventure
+              aktiviteter med masser af adrenalin i New Zealand, Nepal, Ecuador
+              eller Costa Rica? Vælg mellem et af vores fantastiske
+              højskoleophold i udlandet og lad verden gøre dig endnu mere
+              nysgerrig. Du rejser altid med andre unge mennesker på din egen
+              alder og danske rejseledere og undervisere. På højskolerejsen
+              kommer du ikke kun til at opleve og forstå andre spændende
+              kulturer. Rejserne giver også et unikt indblik i dig selv, så du
+              kommer hjem med mere selvtillid og selvværd og står endnu stærkere
+              som menneske. At rejse med en højskole er ikke blot et eventyr ud
+              i verden – det er også en spændende rejse i forhold til dig og din
+              personlige udvikling.
+            </p>
+          </details>
+        </div>
       </div>
     </div>
+    <Image
+      alt="Facebook logo"
+      src={billede}
+      class="w-96 object-cover rounded-default"
+    />
   </div>
-  <Image alt="Facebook logo" src={pilned} class="w-3 m-2" />
 </section>
 
 <style>
