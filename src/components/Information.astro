@@ -1,7 +1,7 @@
 ---
 import Button from "../components/Button.astro";
 import { Image } from "astro:assets";
-import infobillede from "../assets/images/forsideinfo.jpg";
+import infobillede from "../assets/images/forsideinfo2.jpg";
 ---
 <section class="px-sm lg:px-3xl pt-lg">
 <h2 class="font-display flex justify-center text-xxlarge-mobile lg:text-xxxlarge">INFORMATION</h2>
@@ -10,51 +10,40 @@ import infobillede from "../assets/images/forsideinfo.jpg";
     </div>
 
 <div class="lg:max-w-7xl pt-xs">
-    <div class="grid gap-xs p-2 lg:grid-cols-3 lg:grid-rows-3 rounded-default">
+    <div class="grid gap-xs p-2 lg:grid-cols-3 lg:grid-rows-1 rounded-default">
     
-    <div class="lg:col-span-2 row-span-2 rounded-default lg:order-first h-fit overflow-hidden">
+    <div class="lg:col-span-2 row-span-2 rounded-default lg:order-first max-h-96 overflow-hidden">
         <Image src={infobillede} alt="billede med gruppe af mennesker" class="rounded-default" loading="lazy"/>
     </div>
     
     <div class="lg:col-span-1 row-span-3 bg-blaze-orange-100 rounded-default -order-1">
-        <div class="flex flex-col justify-between py-sm px-sm">
-            <!-- <div class="grid grid-rows-[1fr_4fr_1fr] gap-20 py-sm px-sm"> -->
+            <div class="grid grid-rows-[1fr_4fr_1fr] lg:gap-4 lg:content-between h-full py-sm px-sm">
                 <h3 class="text-center font-semibold text-xlarge-mobile lg:text-xlarge">INFOMØDER</h3>
-                <div class="grid grid-rows-3">
-                    <div class="">
-                        <p class="font-semibold">AARHUS</p>
-                        <div class="flex flex-row justify-between">
-                            <p>14. JANUAR 2025</p>
-                            <p>// Kl. 17 - 19</p>
-                        </div>
+                <div>
+                    <p class="font-semibold">AARHUS</p>
+                    <div class="flex flex-row justify-between">
+                        <p>14. JANUAR 2025</p>
+                        <p>// Kl. 17 - 19</p>
                     </div>
-                     <div class="">
-                        <p class="font-semibold">KØBENHAVN</p>
-                        <div class="flex flex-row justify-between">
-                            <p>16. JANUAR 2025</p>
-                            <p>// Kl. 17 - 19</p>
-                        </div>
+                    <p class="font-semibold">AARHUS</p>
+                    <div class="flex flex-row justify-between">
+                        <p>14. JANUAR 2025</p>
+                        <p>// Kl. 17 - 19</p>
                     </div>
-                     <div class="">
-                        <p class="font-semibold">ONLINE INFOMØDE</p>
-                        <div class="flex flex-row justify-between">
-                            <p>13. NOVEMBER 2024</p>
-                            <p>// Kl. 17 - 19</p>
-                        </div>
-                        <div class="flex flex-row justify-between">
-                            <p>21. JANUAR 2025</p>
-                            <p>// Kl. 17 - 19</p>
-                        </div>
+                    <p class="font-semibold">AARHUS</p>
+                    <div class="flex flex-row justify-between">
+                        <p>14. JANUAR 2025</p>
+                        <p>// Kl. 17 - 19</p>
                     </div>
                 </div>
                 <div class="flex justify-center">
                     <Button>TILMELD DIG INFOMØDE</Button>
                 </div>
-                </div>
+            </div>
         </div>
     
       <div class="lg:col-span-1 row-span-1 bg-blaze-orange-100 rounded-default py-sm px-sm info_a">
-        <div class="flex flex-col">
+        <div class="flex flex-col lg:gap-6">
         <h3 class="text-center font-semibold text-xlarge-mobile lg:text-xlarge">BROCHURE</h3>
         <p>Få det fulde overblik – <a href="https://issuu.com/hojskolendk/docs/h_jskolendk_-_dit_livs_eventyr">læs</a>, <a href="https://www.hojskolendk.dk/brochure/">bestil</a> eller <a href="#">download</a> vores brochure og opdag, hvad din højskoleoplevelse kan blive til!</p>
          <div class="flex justify-center">
@@ -64,13 +53,14 @@ import infobillede from "../assets/images/forsideinfo.jpg";
       </div>
     
       <div class="lg:col-span-1 row-span-1 bg-blaze-orange-100 rounded-default py-sm px-sm">
+        <div class="flex flex-col lg:gap-3">
         <h3 class="text-center font-semibold text-xlarge-mobile lg:text-xlarge">BLOG</h3>
         <p>Bliv inspireret og få nye perspektiver – dyk ned i vores blog, hvor vi deler historier, tips og indsigt til din rejse mod personlig udvikling!</p>
          <div class="flex justify-center">
         <Button>LÆS BLOGS</Button>
         </div>
       </div>
-    
+      </div>
     </div>
 </div>
   </section>
