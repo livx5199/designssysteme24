@@ -2,10 +2,33 @@
 const { video="", caption="" } = Astro.props;
 ---
 
-<div class="item w-full h-full transition-opacity duration-[0.5s] ease-in-out">
-    <video class="w-full h-full object-cover object-center" autoplay loop muted>
-        <source src={video} type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <p class="caption w-[100%] px-lg absolute bottom-0 uppercase text-center bg-black bg-opacity-50">{caption}</p>
+<div class="item mx-auto w-10/12 lg:w-10/12 transition-opacity duration-[0.5s] ease-in-out" id="videoonhover" x-data>
+    <div class="relative">
+        <video x-ref="hovervideo" @mouseenter="$refs.hovervideo.play()" @mouseleave="$refs.hovervideo.pause()"
+        class="w-full h-full aspect-[9/16] object-cover object-center rounded-medium" loop muted>
+            <source src={video} type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="caption absolute top-0 p-s text-center text-large bg-blaze-orange-50/90 w-full h-xl">{caption}</p>
+    </div>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const videoElements = document.querySelectorAll('video');  // Select all video elements
+    const isMobile = window.innerWidth <= 768; // Define mobile as screen width 768px or less
+
+    videoElements.forEach(videoElement => {
+        if (isMobile) {
+            // Autoplay on mobile for all videos
+            videoElement.setAttribute('autoplay', 'true');  // Use string 'true' here
+            videoElement.play();
+        } else {
+            // Play on hover (for desktop)
+            videoElement.removeAttribute('autoplay');
+            videoElement.addEventListener('mouseenter', () => videoElement.play());
+            videoElement.addEventListener('mouseleave', () => videoElement.pause());
+        }
+    });
+});
+</script>
