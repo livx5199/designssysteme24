@@ -1,70 +1,75 @@
 ---
 import Carousel_cards from "../components/Carousel_cards.astro"
 ---
-<section class="mx-3xl py-xl">
-    <h1 class="text-xxxlarge font-display text-center pb-xs">HØJSKOLE OPHOLD</h1>
+<section class="mx-sm lg:mx-3xl py-m lg:py-xl text-vulcan-950* relative">
+    <h1 class="text-xxlarge-mobile lg:text-xxxlarge font-display text-center pb-xs">HØJSKOLE OPHOLD</h1>
 
     <!-- 45 to 80 characters (per line) -->
-    <p class="text-center w-[80ch] mx-auto">Der venter dig et unikt rejseeventyr når du tager på højskole i udlandet,
+    <p class="text-center lg:w-[80ch] mx-auto">Der venter dig et unikt rejseeventyr når du tager på højskole i udlandet,
         med et stærkt sammenhold og fede rejseoplevelser. Glæd dig også til inspirerende undervisning,
         der levende og aktivt forener det lærende med det legende. Se vores eventyrlige højskoleophold i udlandet</p>
+    
+    <div class="pt-sm relative gap-0 lg:gap-sm mx-auto overflow-x-auto snap-mandatory snap-x scroll-p-2.5 flex no-scrollbar scroll-smooth snap-center justify-center">
+        <div class="snap-center shrink-0 w-full sm:w-full lg:w-1/3 snap-always">
+        <Carousel_cards video="src/assets/videos/hawaii.mp4" caption="Caribien, Hawaii & Mexico"></Carousel_cards>
+        </div>
 
-    <div class="carousel-container w-[80%] m-auto relative flex flex-col gap-[1px]">
-        <div class="carousel aspect-[9/16] w-[100%] relative overflow-hidden">
-          <Carousel_cards class="active opacity-1 block"
-          video="src/assets/videos/australien.mp4"
-          caption="hej "
-          >
-          </Carousel_cards>
-          <Carousel_cards class="hidden"></Carousel_cards>
-          <Carousel_cards class="hidden"></Carousel_cards>
-        </div>
-        <button class="btn prev px-[1em] py-[2em] absolute translate-y-[17rem] top-[50%] outline-none border-none cursor-pointer uppercase
-        font-[900] text-[#10100e] bg-vulcan-50 transition-transform duration-[0.2s] ease-in-out left-[-5%] active:translate-y-[-50%] active:scale-[0.9] focus:translate-y-[-50%] focus:scale-[0.9] hover:translate-y-[-50%] hover:scale-[0.96]">Prev</button>
-        <button class="btn next px-[1em] py-[2em] absolute translate-y-[17rem] top-[50%] outline-none border-none cursor-pointer uppercase
-        font-[900] text-[#10100e] bg-vulcan-50 transition-transform duration-[0.2s] ease-in-out right-[-5%] active:translate-y-[-50%] active:scale-[0.9] focus:translate-y-[-50%] focus:scale-[0.9] hover:translate-y-[-50%] hover:scale-[0.96]">Next</button>
-        <div class="dots flex items-center justify-center gap-[10px]">
-        </div>
+        <div class="snap-center shrink-0 w-full sm:w-full lg:w-1/3 snap-always">
+        <Carousel_cards video="src/assets/videos/colombia.mp4" caption="Costa Rica, Mexico & Columbia" preload="none" loading="lazy"></Carousel_cards>
+      </div>
+
+      <div class="snap-center shrink-0 w-full sm:w-full lg:w-1/3 snap-always">
+        <Carousel_cards video="src/assets/videos/japan.mp4" caption="Australien, Japan, Bali & Gili Islands" preload="none" loading="lazy"></Carousel_cards>
+      </div>
+      
+      <div class="snap-center shrink-0 w-full sm:w-full lg:w-1/3 snap-always">
+        <Carousel_cards video="src/assets/videos/new_zealand.mp4" caption="Australien, New Zealand, Bali & Gili Islands" preload="none" loading="lazy"></Carousel_cards>
+      </div>
+
+      <div class="snap-center shrink-0 w-full sm:w-full lg:w-1/3 snap-always">
+        <Carousel_cards video="src/assets/videos/indien.mp4" caption="Indien, Nepal, Thailand, Vietnam & Sri Lanka" preload="none" loading="lazy"></Carousel_cards>
+      </div>
+
+      <div class="snap-center shrink-0 w-full sm:w-full lg:w-1/3 snap-always">
+        <Carousel_cards video="src/assets/videos/australien.mp4" caption="Hawaii, Australien, Japan, Bali & Gili Islands" preload="none" loading="lazy"></Carousel_cards>
+      </div>
+
+      <div class="snap-center shrink-0 w-full sm:w-full lg:w-1/3 snap-always">
+        <Carousel_cards video="src/assets/videos/maldiverne.mp4" caption="Maldiverne, Sri Lanka, Bali & Gili Islands" preload="none" loading="lazy"></Carousel_cards>
+      </div>
+
+      <div class="snap-center shrink-0 w-full sm:w-full lg:w-1/3 snap-always">
+        <Carousel_cards video="src/assets/videos/brasilien.mp4" caption="Brasilien, Bolivia, Colombia, Ecuador, Peru & Argetina" preload="none" loading="lazy"></Carousel_cards>
+      </div>
+
+      <div class="snap-center shrink-0 w-full sm:w-full lg:w-1/3 snap-always">
+        <Carousel_cards video="src/assets/videos/bali_gili.mp4" caption="Bali, Lombok & Gili Islands" preload="none" loading="lazy"></Carousel_cards>
+      </div>
     </div>
-</section>
 
-<script>
-   document.addEventListener("DOMContentLoaded", function () {
-  const items = document.querySelectorAll(".item");
-  const dotsContainer = document.querySelector(".dots");
+       <button class="drop-shadow-lg prev px-fit py-fit absolute top-[55%] outline-none border-none cursor-pointer
+        transition-transform duration-[0.2s] ease-in-out left-0 active:drop-shadow-xl
+        active:scale-90 hover:-translate-y-3.5 hover:scale-95">
+        <img src="../images/venstre.svg" alt="svg højre knap">
+    </button>
+        
+    <button class="drop-shadow-lg next px-fit py-fit absolute top-[55%] outline-none border-none cursor-pointer
+        transition-transform duration-[0.2s] ease-in-out right-0 active:drop-shadow-xl
+        active:scale-90 hover:-translate-y-3.5 hover:scale-95">
+        <img src="../images/hojre.svg" alt="svg højre knap">
+    </button>
+  </section>
 
-  // Insert dots into the DOM
-  items.forEach((_, index) => {
-    const dot = document.createElement("span");
-    dot.classList.add("dot", "cursor-pointer", "h-[10px]", "w-[10px]", "bg-[#242421]", "transition", "duration-[0.2s]", "ease-linear", "hover:bg-[#ffffe6]");
-    if (index === 0) dot.classList.add("active", "bg-[#ffffe6]");
-    dot.dataset.index = index.toString();
-    dotsContainer.appendChild(dot);
-  });
 
-  const dots = document.querySelectorAll(".dot");
+  <style>
+    /* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 
-  // Function to show a specific item
-  function showItem(index) {
-    items.forEach((item, idx) => {
-      item.classList.toggle("hidden", idx !== index);
-      dots[idx].classList.toggle("active", idx === index);
-      dots[idx].classList.toggle("bg-[#ffffe6]", idx === index);
-    });
-  }
-
-  // Event listeners for buttons
-  document.querySelector(".prev").addEventListener("click", () => {
-    const index = [...items].findIndex(item => !item.classList.contains("hidden"));
-    showItem((index - 1 + items.length) % items.length);
-  });
-
-  document.querySelector(".next").addEventListener("click", () => {
-    const index = [...items].findIndex(item => !item.classList.contains("hidden"));
-    showItem((index + 1) % items.length);
-  });
-
- // Event listeners for dots
-  dots.forEach(dot => dot.addEventListener("click", () => showItem(parseInt((dot as HTMLElement).dataset.index!))));
-}); 
-</script>
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+  </style>
