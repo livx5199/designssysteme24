@@ -18,7 +18,12 @@ import FAQ from "../components/FAQ.astro";
 
   <Intro />
 
+  <div class="relative">
+  <img src="../images/orangebgdesktop.svg" alt="" class="lg:block hidden absolute z-[-100] lg:w-full lg:h-auto top-[-100px] lg:top-[-300px]" loading="lazy">
+    <img src="../images/orangebgmobil.svg" alt="" class="lg:hidden block absolute z-[-100] w-full h-auto top-[-100px]" loading="lazy">
   <Carousel />
+  </div>
+  
 
   <Trustpilot />
 
@@ -27,4 +32,8 @@ import FAQ from "../components/FAQ.astro";
   <FoelgOs />
 
   <FAQ />
+  <div class="relative">
+  <img src="../images/orangebgdesktop2.svg" alt="" class="lg:block hidden absolute z-[-100]  w-full h-auto lg:top-[-300px]" loading="lazy">
+  <img src="../images/orangebgmobil2.svg" alt="" class="lg:hidden block absolute z-[-100]  w-full h-auto top-[-200px]" loading="lazy">
+   </div>
 </MainLayout>
